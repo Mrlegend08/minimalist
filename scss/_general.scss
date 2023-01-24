@@ -3,6 +3,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  background-color: #fafafa;
 }
 
 *,
@@ -26,4 +27,13 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+section:nth-child(even) {
+  padding-left: 120px;
+}
+
+main {
+  background-color: #fafafa;
+
 }

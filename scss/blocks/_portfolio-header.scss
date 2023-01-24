@@ -1,0 +1,115 @@
+.site-header {
+    padding: 64px 0 94px 0;
+    background-color: #fafafa;
+
+    overflow-y: hidden;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    &__items {
+
+        margin-right: 42px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+
+        &:hover {
+            color: #1ae2b7;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    //! MODAL BOX   */
+    &__modal {
+        position: fixed;
+        right: -100%;
+        width: 223px;
+        height: 186px;
+        background-color: #33323D;
+        padding: 40px 0 40px 0;
+        transition: all 0.3s ease-out;
+    }
+
+    &__modal.back {
+        right: 20px;
+    }
+
+    &__modal-list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    &__modal-items {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__modal-link {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    .site-header {
+        padding: 32px 0 45px 0;
+
+        &__navbar {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 450px) {
+    .site-header__modal {
+        display: none;
+    }
+}
