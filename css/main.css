@@ -295,6 +295,10 @@ textarea {
   -webkit-appearance: none;
 }
 
+427
+  width: 100%;
+428
+  max-width: 1140px;
 /**
 * 1. Correct the inability to style clickable types in iOS and Safari.
 * 2. Change font properties to `inherit` in Safari.
@@ -392,7 +396,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 400;
   background-color: #fff;
 }
 
@@ -432,7 +437,7 @@ main {
 }
 
 .site-header {
-  padding: 64px 0 94px 0;
+  padding: 64px 0 60px 0;
   background-color: #fafafa;
   overflow-y: hidden;
 }
@@ -473,6 +478,7 @@ main {
   display: none;
 }
 .site-header__modal {
+  display: none;
   position: fixed;
   right: -100%;
   width: 223px;
@@ -516,6 +522,9 @@ main {
   .site-header__burger {
     display: block;
   }
+
+  .site-header__modal {
+    display: block;
 }
 @media only screen and (min-width: 450px) {
   .site-header__modal {
@@ -523,6 +532,7 @@ main {
   }
 }
 .hero-section {
+  margin-top: 33px;
   margin-bottom: 80px;
   background-color: #fafafa;
 }
@@ -1370,5 +1380,6 @@ main {
     align-items: center !important;
     row-gap: 32px;
     margin-bottom: 40px;
+
   }
 }/*# sourceMappingURL=main.css.map */
