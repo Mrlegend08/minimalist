@@ -1,28 +1,35 @@
 //! HEADER STYLE STARTING
-.site-header{
-    padding: 64px 0 60px 0;
+.site-header {
+    background-color: #fafafa;
+
+    padding: 64px 0 90px 0;
     overflow-y: hidden;
-    &__wrapper{
+
+    &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    
+
     }
-    &__list{
+
+    &__list {
         display: flex;
         align-items: center;
         list-style: none;
-       margin: 0;
-       padding-left: 0;
+        margin: 0;
+        padding-left: 0;
     }
-    &__items{
-        
+
+    &__items {
+
         margin-right: 42px;
-        &:last-child{
+
+        &:last-child {
             margin-right: 0;
         }
     }
-    &__link{
+
+    &__link {
         font-family: 'Public Sans';
         font-style: normal;
         font-weight: 400;
@@ -33,16 +40,18 @@
         color: #33323D;
         text-decoration: none;
         transition: 0.2s ease-out;
-        &:hover{
+
+        &:hover {
             color: #1ae2b7;
         }
     }
-    &__burger{
+
+    &__burger {
         display: none;
     }
 
     //! MODAL BOX   */
-    &__modal{
+    &__modal {
         display: none;
         position: fixed;
         right: -100%;
@@ -57,19 +66,21 @@
         right: 20px;
     }
 
-    &__modal-list{
+    &__modal-list {
         display: flex;
         align-items: center;
         flex-direction: column;
         padding-left: 0;
         list-style: none;
     }
-    &__modal-items{
-        &:not(:last-child){
+
+    &__modal-items {
+        &:not(:last-child) {
             margin-bottom: 32px;
         }
     }
-    &__modal-link{
+
+    &__modal-link {
         font-family: 'Public Sans';
         font-style: normal;
         font-weight: 400;
@@ -78,23 +89,27 @@
         letter-spacing: 2px;
         text-decoration: none;
         text-transform: uppercase;
-        color: #FFFFFF; 
+        color: #FFFFFF;
     }
 }
 
-@media only screen and (max-width: 450px){
-    .site-header{
+@media only screen and (max-width: 450px) {
+    .site-header {
         padding: 32px 0 45px 0;
-        &__navbar{
+
+        &__navbar {
             display: none;
         }
-        &__burger{
+
+        &__burger {
             display: block;
         }
-        &__modal{
+
+        &__modal {
             display: block;
         }
     }
-    
+
 }
+
 //! HEADER STYLE END --

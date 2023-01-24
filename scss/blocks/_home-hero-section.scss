@@ -1,0 +1,121 @@
+//! HERO SECTION HOME STYLES START
+.hero-section-home{
+    margin-bottom: 150px;
+    &__wrapper{
+        padding-top: 243px;
+        background-image: url(/images/hero-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__text-box{
+        max-width: 445px;
+        padding: 55px 55px 0 0;
+        background-color:  #FAFAFA;
+    }
+    &__title{
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.446429px;
+        color: #33323D;
+        margin: 0;
+        margin-bottom: 53px;
+    }
+    &__links{
+        position: relative;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FAFAFA;
+        padding: 17px 32px 17px 88px;
+        text-decoration: none;
+        background-color: #203A4C;
+        transition: 0.2s ease-out;
+        &::before{
+            content: url(/images/icons/about-me-before.svg);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &:hover{
+            background-color: #5FB4A2;
+        }
+        &:disabled{
+            background-color: #FAFAFA;
+            }
+    }
+    &__mobile-img{
+        display: none;  
+    }
+}
+
+// ?  MEDIA STYLE START 
+@media only screen and (max-width: 950px) {
+    .hero-section-home{
+        margin-bottom: 96px;
+        &__wrapper{
+            padding-top: 322px;
+            background-image: url(/images/hero-bg-tablet@2x.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
+        }
+        &__text-box{
+            max-width: 514px;
+            margin-top: 24px;
+            background-color: #FAFAFA;
+        }
+        &__title{
+            max-width: 458px;
+            font-family: 'Ibarra Real Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 42px;
+            letter-spacing: -0.357143px;
+            color: #33323D;
+            margin: 0;
+            margin-bottom: 48px;
+        }
+    }
+}
+@media only screen and (max-width: 650px) {
+    .hero-section-home{
+        margin-bottom: 76px;
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 0;
+            background-image: none;
+        }
+        &__mobile-img{
+            display: block;
+        }
+        &__text-box{
+            max-width: 311px;
+            background-color:  #FAFAFA;
+        }
+        &__title{
+            max-width: 311px;
+            font-family: 'Ibarra Real Nova';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 42px;
+            letter-spacing: -0.357143px;
+            color: #33323D;
+            margin-bottom: 48px;
+        }
+        
+    }
+}
+
+
+
+//! HERO SECTION HOME STYLES END
