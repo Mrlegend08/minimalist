@@ -28,6 +28,11 @@ img {
   height: auto;
 }
 
-section:nth-child(even){
+section:nth-child(even) {
   padding-left: 120px;
+}
+
+main {
+  background-color: #fafafa;
+
 }
