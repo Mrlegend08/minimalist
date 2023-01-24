@@ -420,4 +420,38 @@ img {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.site-header {
+  padding-top: 64px;
+  padding-bottom: 94px;
+}
+.site-header__item:not(:last-child) {
+  margin-right: 42px;
+}
+.site-header__link {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #5FB4A2;
+}
+.site-header__link:hover {
+  opacity: 0.5;
+}
+.site-header__item:not(:nth-child(2)) .site-header__link {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+}
+.site-header__item:not(:nth-child(2)) .site-header__link:hover {
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

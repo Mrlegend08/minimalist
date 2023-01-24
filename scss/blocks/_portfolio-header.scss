@@ -1,0 +1,39 @@
+.site-header {
+    padding-top: 64px;
+    padding-bottom: 94px;
+
+    &__item:not(:last-child) {
+        margin-right: 42px;
+    }
+
+    &__link {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #5FB4A2;
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    &__item:not(:nth-child(2)) {
+        .site-header__link {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #33323D;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+
+}
