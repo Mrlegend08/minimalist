@@ -391,7 +391,8 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  font-family: "Arial", sans-serif;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 400;
   background-color: #fff;
 }
 
@@ -420,4 +421,94 @@ img {
   margin-left: auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.site-header {
+  padding: 64px 0 60px 0;
+  overflow-y: hidden;
+}
+.site-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-header__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.site-header__items {
+  margin-right: 42px;
+}
+.site-header__items:last-child {
+  margin-right: 0;
+}
+.site-header__link {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+.site-header__link:hover {
+  color: #1ae2b7;
+}
+.site-header__burger {
+  display: none;
+}
+.site-header__modal {
+  display: none;
+  position: fixed;
+  right: -100%;
+  width: 223px;
+  height: 186px;
+  background-color: #33323D;
+  padding: 40px 0 40px 0;
+  transition: all 0.3s ease-out;
+}
+.site-header__modal.back {
+  right: 20px;
+}
+.site-header__modal-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 0;
+  list-style: none;
+}
+.site-header__modal-items:not(:last-child) {
+  margin-bottom: 32px;
+}
+.site-header__modal-link {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 450px) {
+  .site-header {
+    padding: 32px 0 45px 0;
+  }
+  .site-header__navbar {
+    display: none;
+  }
+  .site-header__burger {
+    display: block;
+  }
+  .site-header__modal {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

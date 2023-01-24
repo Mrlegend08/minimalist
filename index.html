@@ -1,16 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <!-- HEADER START -->
-    <!-- HEADER END -->
-
+      <!--? HEADER START -->
+      <header class="site-header">
+        <div class="container site-header__container">
+            <div class="site-header__wrapper">
+                <a class="site-header__logo-link" href="/index.html"><img src="/images/icons/site-logo.svg" alt="site logotip"></a>
+                <navbar class="site-header__navbar">
+                    <ul class="site-header__list">
+                        <li class="site-header__items">
+                            <a class="site-header__link" href="/index.html">HOME</a>
+                        </li>
+                        <li class="site-header__items">
+                            <a class="site-header__link" href="/portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="site-header__items">
+                            <a class="site-header__link" href="/contact.html">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </navbar>
+                <img class="site-header__burger" src="/images/icons/burger.svg" alt="burger icon">
+            </div>
+            <div class="site-header__modal">
+                <ul class="site-header__modal-list">
+                    <li class="site-header__modal-items">
+                        <a class="site-header__modal-link" href="/index.html">HOME</a>
+                    </li>
+                    <li class="site-header__modal-items">
+                        <a class="site-header__modal-link" href="/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="site-header__modal-items">
+                        <a class="site-header__modal-link" href="/contact.html">CONTACT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--? HEADER END -->
+    <!--? MAIN PART START  -->
+    <main>
+        <section class="hero-section-home">
+            <div class="container">
+                <div class="hero-section-home__wrapper">
+                    <div class="hero-section-home__text-box">
+                        <h1 class="hero-section-home__title">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+                        <a class="hero-section-home__links" href="/index.html">ABOUT ME</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--? MAIN PART END  -->
     <script src="./js/main.js"></script>
 </body>
+
 </html>
