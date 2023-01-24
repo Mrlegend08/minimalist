@@ -1,0 +1,234 @@
+.fylo-section {
+    margin-bottom: 80px;
+
+    &__wrapper {
+        gap: 125px;
+    }
+
+    &__end {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 350px;
+        width: 100%;
+        padding-top: 103px;
+        padding-bottom: 103px;
+        border-top: 1px solid #33323D;
+        border-bottom: 1px solid #33323D;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 28px;
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+    }
+
+    &__desc {
+        margin-top: 0;
+        margin-bottom: 24px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #33323D;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+
+    &__btn {
+        padding: 17px 36px 17px 32px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        border: 1px solid #33323D;
+        transition: all 0.3s linear;
+
+
+        &:hover {
+            transition: all 0.3s linear;
+            background-color: #33323D;
+            color: #fff;
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+}
+
+@media only screen and (max-width: 1065px) {
+    .fylo-section {
+        padding-left: 100px !important;
+    }
+
+    .fylo-section__wrapper {
+        gap: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 1035px) {
+    .fylo-section {
+        padding-left: 80px !important;
+    }
+
+    .fylo-section__wrapper {
+        gap: 80px;
+    }
+}
+
+@media only screen and (max-width: 1015px) {
+    .fylo-section {
+        padding-left: 60px !important;
+    }
+
+    .fylo-section__wrapper {
+        align-items: center;
+        gap: 60px;
+    }
+
+    .fylo-section__img {
+        width: 500px;
+        height: 480px;
+    }
+}
+
+
+@media only screen and (max-width: 925px) {
+    .fylo-section {
+        padding-left: 40px !important;
+    }
+
+    .fylo-section__wrapper {
+        align-items: center;
+        gap: 60px;
+    }
+
+    .fylo-section__end {
+        padding: 70px 0 70px 0;
+    }
+
+    .fylo-section__img {
+        width: 450px;
+        height: 440px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .fylo-section {
+        padding-left: 20px !important;
+    }
+
+    .fylo-section__wrapper {
+        align-items: center;
+        gap: 50px;
+    }
+
+    .fylo-section__end {
+        padding: 50px 0 50px 0;
+    }
+
+    .fylo-section__img {
+        width: 430px;
+        height: 420px;
+    }
+}
+
+
+@media only screen and (max-width: 830px) {
+    .fylo-section__wrapper {
+        align-items: center;
+        gap: 50px;
+    }
+
+    .fylo-section__end {
+        padding: 35px 0 35px 0;
+    }
+
+    .fylo-section__img {
+        width: 400px;
+        height: 390px;
+    }
+}
+
+@media only screen and (max-width: 745px) {
+    .fylo-section {
+        padding: 0 !important;
+    }
+
+    .fylo-section__wrapper {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
+    .fylo-section__end {
+        max-width: 500px;
+        padding: 35px 0 35px 0;
+    }
+
+    .fylo-section__img {
+        width: 500px;
+        height: 480px;
+    }
+}
+
+
+
+@media only screen and (max-width: 550px) {
+    .fylo-section__img {
+        max-width: 480px;
+        width: 100%;
+        height: 460px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .fylo-section__img {
+        height: 420px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .fylo-section__img {
+        height: 425px;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .fylo-section__img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .fylo-section__img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .fylo-section__img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .fylo-section__img {
+        height: 288px;
+    }
+}
