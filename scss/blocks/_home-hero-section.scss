@@ -38,7 +38,7 @@
         background-color: #203A4C;
         transition: 0.2s ease-out;
         &::before{
-            content: url(/images/icons/about-me-before.svg);
+            content: url(/images/icons/button.svg);
             position: absolute;
             left: 0;
             top: 0;
@@ -98,11 +98,16 @@
             display: block;
         }
         &__text-box{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             max-width: 311px;
+            padding: 0;
             background-color:  #FAFAFA;
         }
         &__title{
             max-width: 311px;
+            text-align: center;
             font-family: 'Ibarra Real Nova';
             font-style: normal;
             font-weight: 700;
