@@ -39,6 +39,11 @@
         color: #33323D;
         text-decoration: none;
         border: 1px solid #33323D;
+        transition: 0.3s ease-out;
+        &:hover{
+            color: #fff;
+            background-color: #33323D;
+        }
         
     }
 }
