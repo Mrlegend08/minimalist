@@ -1,0 +1,98 @@
+.about-section{
+    padding-left: 0 !important;
+    margin-bottom: 150px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+    }
+    &__text-box{
+        max-width: 350px;
+        padding-top: 50px;
+        padding-bottom: 52px;
+        margin-left: 125px;
+
+        &{
+            border-top: 1px solid #33323D;
+            border-bottom: 1px solid #33323D;
+        }
+    }
+    &__title{
+        font-family: 'Ibarra Real Nova';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357143px;
+        color: #33323D;
+        margin: 0;
+        margin-bottom: 28px;
+    }
+    &__desc{
+        max-width: 350;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height:31.5px;
+        color: #33323D;
+        margin: 0;
+        margin-bottom: 24px;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+    &__linki{
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #33323D;
+        text-decoration: none;
+        padding: 17px 36px 17px 32px;
+        border: 1px solid #33323D;
+        transition: 0.2s ease-in-out;;
+        &:hover{
+        background-color: #33323D;
+        color: #FAFAFA;
+        }
+    }
+}
+@media only screen and (max-width: 689px) {
+ .about-section{
+    margin-bottom: 115px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__text-box{
+        text-align: center;
+        max-width: 311px;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        margin-left: 0px;
+        margin-top: 68px;
+
+        &{
+            border-top: 1px solid #33323D;
+            border-bottom: 1px solid #33323D;
+        }
+    }
+    &__desc{
+        max-width: 311px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height:30px;
+        color: #33323D;
+        margin: 0;
+        margin-bottom: 24px;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+ }
+}
+    

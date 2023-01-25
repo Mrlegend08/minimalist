@@ -295,10 +295,6 @@ textarea {
   -webkit-appearance: none;
 }
 
-427
-  width: 100%;
-428
-  max-width: 1140px;
 /**
 * 1. Correct the inability to style clickable types in iOS and Safari.
 * 2. Change font properties to `inherit` in Safari.
@@ -437,8 +433,8 @@ main {
 }
 
 .site-header {
-  padding: 64px 0 60px 0;
   background-color: #fafafa;
+  padding: 64px 0 90px 0;
   overflow-y: hidden;
 }
 .site-header__wrapper {
@@ -482,7 +478,6 @@ main {
   position: fixed;
   right: -100%;
   width: 223px;
-  height: 186px;
   background-color: #33323D;
   padding: 40px 0 40px 0;
   transition: all 0.3s ease-out;
@@ -522,17 +517,11 @@ main {
   .site-header__burger {
     display: block;
   }
-
   .site-header__modal {
     display: block;
-}
-@media only screen and (min-width: 450px) {
-  .site-header__modal {
-    display: none;
   }
 }
 .hero-section {
-  margin-top: 33px;
   margin-bottom: 80px;
   background-color: #fafafa;
 }
@@ -1380,6 +1369,279 @@ main {
     align-items: center !important;
     row-gap: 32px;
     margin-bottom: 40px;
+  }
+}
+.hero-section-home {
+  margin-bottom: 150px;
+}
+.hero-section-home__wrapper {
+  padding-top: 243px;
+  background-image: url(/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section-home__text-box {
+  max-width: 445px;
+  padding: 55px 55px 0 0;
+  background-color: #FAFAFA;
+}
+.hero-section-home__title {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.446429px;
+  color: #33323D;
+  margin: 0;
+  margin-bottom: 53px;
+}
+.hero-section-home__links {
+  position: relative;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FAFAFA;
+  padding: 17px 32px 17px 88px;
+  text-decoration: none;
+  background-color: #203A4C;
+  transition: 0.2s ease-out;
+}
+.hero-section-home__links::before {
+  content: url(/images/icons/button.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hero-section-home__links:hover {
+  background-color: #5FB4A2;
+}
+.hero-section-home__links:disabled {
+  background-color: #FAFAFA;
+}
+.hero-section-home__mobile-img {
+  display: none;
+}
 
+@media only screen and (max-width: 950px) {
+  .hero-section-home {
+    margin-bottom: 96px;
+  }
+  .hero-section-home__wrapper {
+    padding-top: 322px;
+    background-image: url(/images/hero-bg-tablet@2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero-section-home__text-box {
+    max-width: 514px;
+    margin-top: 24px;
+    background-color: #FAFAFA;
+  }
+  .hero-section-home__title {
+    max-width: 458px;
+    font-family: "Ibarra Real Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .hero-section-home {
+    margin-bottom: 76px;
+  }
+  .hero-section-home__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    background-image: none;
+  }
+  .hero-section-home__mobile-img {
+    display: block;
+  }
+  .hero-section-home__text-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 311px;
+    padding: 0;
+    background-color: #FAFAFA;
+  }
+  .hero-section-home__title {
+    max-width: 311px;
+    text-align: center;
+    font-family: "Ibarra Real Nova";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357143px;
+    color: #33323D;
+    margin-bottom: 48px;
+  }
+}
+.about-section {
+  padding-left: 0 !important;
+  margin-bottom: 150px;
+}
+.about-section__wrapper {
+  display: flex;
+  align-items: center;
+}
+.about-section__text-box {
+  max-width: 350px;
+  padding-top: 50px;
+  padding-bottom: 52px;
+  margin-left: 125px;
+}
+.about-section__text-box {
+  border-top: 1px solid #33323D;
+  border-bottom: 1px solid #33323D;
+}
+.about-section__title {
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.about-section__desc {
+  max-width: 350;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31.5px;
+  color: #33323D;
+  margin: 0;
+  margin-bottom: 24px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.about-section__linki {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323D;
+  text-decoration: none;
+  padding: 17px 36px 17px 32px;
+  border: 1px solid #33323D;
+  transition: 0.2s ease-in-out;
+}
+.about-section__linki:hover {
+  background-color: #33323D;
+  color: #FAFAFA;
+}
+
+@media only screen and (max-width: 689px) {
+  .about-section {
+    margin-bottom: 115px;
+  }
+  .about-section__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about-section__text-box {
+    text-align: center;
+    max-width: 311px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    margin-left: 0px;
+    margin-top: 68px;
+  }
+  .about-section__text-box {
+    border-top: 1px solid #33323D;
+    border-bottom: 1px solid #33323D;
+  }
+  .about-section__desc {
+    max-width: 311px;
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #33323D;
+    margin: 0;
+    margin-bottom: 24px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
+.aside-part {
+  margin-bottom: 150px;
+}
+.aside-part__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aside-part__title {
+  max-width: 350px;
+  font-family: "Ibarra Real Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  color: #33323D;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.aside-part__line {
+  flex-grow: 1;
+  max-width: 534px;
+  height: 1px;
+  background: #33323D;
+  opacity: 0.15;
+  background-color: #33323D;
+  margin-right: 32px;
+}
+.aside-part__linki {
+  display: inline-block;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  padding: 17px 34px;
+  text-transform: uppercase;
+  color: #33323D;
+  text-decoration: none;
+  border: 1px solid #33323D;
+  transition: 0.3s ease-out;
+}
+.aside-part__linki:hover {
+  color: #fff;
+  background-color: #33323D;
+}
+
+@media only screen and (max-width: 650px) {
+  .aside-part {
+    margin-bottom: 80px;
+  }
+  .aside-part__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
