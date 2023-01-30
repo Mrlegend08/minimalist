@@ -1,0 +1,52 @@
+@use '../root';
+
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.footer{
+    background-color: root.$grayish;
+    &-content{
+        padding: 24px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__start{
+        @extend .flex;
+    }
+    &__nav-list{
+        @extend .flex;
+    }
+    &__nav-link{
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__end{
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width: 767.98px){
+    .container{
+        width: auto;
+    }
+    .footer{
+        &-content, &__start{
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        &__nav-list{
+            flex-direction: column;
+            row-gap: 32px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'IbarraRealNova';
+    src: url('../assets/fonts/IbarraRealNova/IbarraRealNova-Regular.woff') format('woff'),
+         url('../assets/fonts/IbarraRealNova/IbarraRealNova-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IbarraRealNova';
+    src: url('../assets/fonts/IbarraRealNova/IbarraRealNova-Bold.woff') format('woff'),
+         url('../assets/fonts/IbarraRealNova/IbarraRealNova-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../assets/fonts/PublicSans/PublicSans-Regular.woff') format('woff'),
+         url('../assets/fonts/PublicSans/PublicSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../assets/fonts/PublicSans/PublicSans-Bold.woff') format('woff'),
+         url('../assets/fonts/PublicSans/PublicSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('../assets/fonts/PublicSans/PublicSans-BoldItalic.woff') format('woff'),
+         url('../assets/fonts/PublicSans/PublicSans-BoldItalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
